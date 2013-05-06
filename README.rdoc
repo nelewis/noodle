@@ -10,8 +10,7 @@ Running tested features:
 
 == Author
 
-Nicole Lewis
-Nabi-the-feral-cat who often pairs on the keyboard :)
+Nicole Lewis with contributions from Nabi-the-feral-cat who often pairs on the keyboard :)
 
 == Contributing to noodle
 
