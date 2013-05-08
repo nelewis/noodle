@@ -7,8 +7,28 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-
-<%= yield %>
-
+<div class="navbar navbar-fixed-top">
+	<div class="navbar-inner">
+		<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		</a>
+		<a class="brand" href="#">Noodle</a>
+		<div class="nav-collapse">
+			<ul class="nav">
+				<li><%= link_to "Days", "#" %></li>
+				<li><%= link_to "Family", "#" %></li>
+				<li><%= link_to "Info", "#" %></li>
+			</ul>
+		</div>
+	</div>
+</div>
+<div class="container">
+	<div class="row">
+		<div class="span9">	<%= yield %></div>
+		<div class="span3">3 (out of the 12 possible) columns, maybe a photo</div>
+	</div>
+</div>
 </body>
 </html>
