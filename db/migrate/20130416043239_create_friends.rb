@@ -4,7 +4,7 @@ class CreateFriends < ActiveRecord::Migration
       t.string :name
       t.date :dob
       t.string :address
-      t.age :number
+      t.integer :age
 
       t.timestamps
     end
