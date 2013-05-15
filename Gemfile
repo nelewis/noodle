@@ -2,12 +2,18 @@ source 'https://rubygems.org'
 
 gem 'rails', '3.2.11'
 gem 'gmaps4rails'
+gem 'devise', '2.1.0.rc'
 
 group :development do
   gem 'sqlite3', '~> 1.3.7'
   gem 'rspec-rails'
   # gem 'wdm'
   gem 'guard-rspec', '0.5.5'
+  gem 'better_errors'
+  gem 'binding_of_caller'
+  gem 'meta_request'
+  gem 'email_spec', '1.2.1'
+  gem 'database_cleaner', '>=0.9.1'
 end
 
 # Gems used only for assets and not required
@@ -32,6 +38,8 @@ group :test do
   # gem 'win32console', '1.3.0'
   gem 'guard-spork', '0.3.2'
   gem 'spork','0.9.0'
+  gem 'factory_girl', '2.6.4'
+
 end
 
 # group :production do
