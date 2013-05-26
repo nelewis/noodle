@@ -1,8 +1,15 @@
 Noodle::Application.routes.draw do
   devise_for :users
   devise_for :installs
+  #
+  # In Rails, a resourceful route provides a mapping between HTTP verbs and URLs to controller actions.
+  # Resource routing allows you to quickly declare all of the common routes for a given resourceful controller. 
+  # Instead of declaring separate routes for your index, show, new, edit, create, update and destroy actions, 
+  # a resourceful route declares them in a single line of code.
+  #
   resources :friends
-  root :to => "friends#index"
+  resources :users 
+  root :to => redirect('/friends')
 
 
   # The priority is based upon order of creation:
