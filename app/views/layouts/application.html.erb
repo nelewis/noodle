@@ -22,7 +22,7 @@
 				<li><%= link_to "Family", "/friends" %></li>
 				<li><%= link_to "Users", "/users" %></li>
 			</ul>
-			<p class="navbar-text pull-right">
+			<p class="navbar-text">
 				<% if user_signed_in? %>
   				Logged in as <strong><%= current_user.email %></strong>.
   					<%= link_to 'Edit profile', edit_user_registration_path, :class => 'navbar-link' %> |
@@ -37,7 +37,7 @@
 </div>
 <div class="container">
 	<div class="row">
-		<div class="span9">
+		<div class="span12">
 		<% flash.each do |key, value| %>
 		  <div class='flash' id='<%= key %>'>
 		    <%= value %>
@@ -52,11 +52,10 @@
 		</nav>
 		<p><%= yield %></p>
 		</div>
-		<div class="span3">3 (out of the 12 possible) columns, maybe a photo</div>
 	</div>
 </div>
 <footer>
-    <div class="container">Nicole Lewis 2013</div>
+    <div class="container">Noodle for Q3 UW Ruby on Rails certificate 2013</div>
 </footer>
 </body>
 </html>
