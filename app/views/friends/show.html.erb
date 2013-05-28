@@ -10,8 +10,12 @@
   <dd><%= @friend.dob %></dd>
   <dt><strong><%= model_class.human_attribute_name(:address) %>:</strong></dt>
   <dd><%= @friend.address %></dd>
-  <dd><strong><%= model_class.human_attribute_name(:picture) %>:</strong></dt>
+  <dt><strong><%= model_class.human_attribute_name(:picture) %>:</strong></dt>
   <dd><%= image_tag(@friend.picture_url, :width => 60) if @friend.picture.present? %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:latitude) %>:</strong></dt>
+  <dd><%= @friend.latitude %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:longitude) %>:</strong></dt>
+  <dd><%= @friend.longitude %></dd>
 </dl>
 
 <div class="form-actions">

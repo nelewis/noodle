@@ -1,9 +1,10 @@
 source 'https://rubygems.org'
 
 gem 'rails', '3.2.11'
-gem 'gmaps4rails'
 gem 'devise', '2.1.0.rc'
 gem 'carrierwave'
+gem 'geocoder'
+gem 'gmaps4rails'
 
 group :development do
   gem 'sqlite3', '~> 1.3.7'

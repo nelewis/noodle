@@ -3,6 +3,7 @@ class FriendsController < ApplicationController
   # GET /friends.json
   def index
     @friends = Friend.all
+    @pins = @friends.to_gmaps4rails
 
     respond_to do |format|
       format.html # index.html.erb

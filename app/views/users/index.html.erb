@@ -6,9 +6,12 @@
   <thead>
     <tr>
       <th><%= model_class.human_attribute_name(:id) %></th>
-      <th><%= model_class.human_attribute_name(:email) %></th>     
-      <th><%= model_class.human_attribute_name(:created_at) %></th>
+      <th><%= model_class.human_attribute_name(:email) %></th> 
       <th><%= model_class.human_attribute_name(:picture) %></th>
+      <th><%= model_class.human_attribute_name(:latitude) %></th>
+      <th><%= model_class.human_attribute_name(:longitude) %></th>     
+      <th><%= model_class.human_attribute_name(:created_at) %></th>
+
       <th><%=t '.actions', :default => t("helpers.actions") %></th>
     </tr>
   </thead>
@@ -17,8 +20,10 @@
       <tr>
         <td><%= user.id %></td>
         <td><%= link_to user.email, user_path(user)  %></td>
+        <td><%= image_tag(user.picture_url, :width => 60) if user.picture.present? %></td>
+        <td><%= user.latitude %></td>
+        <td><%= user.longitude %></td>      
         <td><%= user.created_at %></td>
-        <td><%= image_tag(user.picture_url, :width => 600) if user.picture.present? %></td>
         <td>
           <%= link_to t('.edit', :default => t("helpers.links.edit")),
                       edit_user_path(user), :class => 'btn btn-mini' %>
@@ -32,6 +37,9 @@
     <% end %>
   </tbody>
 </table>
+<br/>
+<%= gmaps4rails(@pins) %>
+<%= yield :scripts %>
 
 <%= link_to t('.new', :default => t("helpers.links.new")),
             new_user_path,
