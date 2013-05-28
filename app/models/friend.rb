@@ -1,3 +1,4 @@
 class Friend < ActiveRecord::Base
-  attr_accessible :address, :dob, :name
+  mount_uploader :picture, PictureUploader
+  attr_accessible :address, :dob, :name, :picture, :created_at, :email
 end

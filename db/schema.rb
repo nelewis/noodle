@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130514072417) do
+ActiveRecord::Schema.define(:version => 20130528075026) do
 
   create_table "friends", :force => true do |t|
     t.string   "name"
@@ -19,6 +19,8 @@ ActiveRecord::Schema.define(:version => 20130514072417) do
     t.string   "address"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
+    t.string   "picture"
+    t.string   "email"
   end
 
   create_table "installs", :force => true do |t|
@@ -56,6 +58,8 @@ ActiveRecord::Schema.define(:version => 20130514072417) do
     t.datetime "confirmed_at"
     t.datetime "confirmation_sent_at"
     t.string   "unconfirmed_email"
+    t.string   "picture"
+    t.string   "name"
   end
 
   add_index "users", ["email"], :name => "index_users_on_email", :unique => true
