@@ -2,11 +2,12 @@
 <div class="page-header">
   <h3><%=t '.title', :default => "Where we are" %></h3>
 </div>
-<br/>
-<%= gmaps4rails(@pins) %>
-<%= yield :scripts %>
 
 <table class="table table-striped">
+  <br/>
+  <%= gmaps4rails(@pins) %>
+  <%= yield :scripts %>
+
   <thead>
     <tr>
       <th><%= model_class.human_attribute_name(:id) %></th>
@@ -26,7 +27,7 @@
         <td><%= friend.email %></td>
         <td><%= friend.dob %></td>
         <td><%= friend.address %></td>
-        <td><%= image_tag(friend.picture_url, :width => 60) if friend.picture.present? %><%= friend.picture %></td>
+        <td><%= image_tag(friend.picture_url, :width => 40) if friend.picture.present? %></td>
         <td>
           <%= link_to t('.edit', :default => t("helpers.links.edit")),
                       edit_friend_path(friend), :class => 'btn btn-mini' %>
