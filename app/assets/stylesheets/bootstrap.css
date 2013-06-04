@@ -79,6 +79,9 @@ img {
 .google-maps img {
   max-width: none;
 }
+#mapCanvas label { 
+  width: auto; display:inline; 
+}
 
 button,
 input,
