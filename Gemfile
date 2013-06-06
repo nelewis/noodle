@@ -30,7 +30,7 @@ end
 gem 'jquery-rails' 
 
 group :test do
-  gem 'sqlite3', '~> 1.3.7'
+  #gem 'sqlite3', '~> 1.3.7'
   gem 'rspec-rails'
   gem 'capybara', '1.1.2' # this version works, keep it
   gem 'rb-fchange', '0.0.5'
