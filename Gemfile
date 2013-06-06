@@ -5,9 +5,9 @@ gem 'devise', '2.1.0.rc'
 gem 'carrierwave'
 gem 'geocoder'
 gem 'gmaps4rails'
+gem 'sqlite3', '~> 1.3.7'
 
 group :development do
-  gem 'sqlite3', '~> 1.3.7'
   gem 'rspec-rails'
   gem 'guard-rspec', '0.5.5'
   gem 'better_errors'
