@@ -1,6 +1,6 @@
 <%- model_class = User -%>
 <div class="page-header">
-  <h1><%=t '.title', :default => model_class.model_name.human %></h1>
+  <h3><%=t '.title', :default => model_class.model_name.human %></h3>
 </div>
 
 <dl class="dl-horizontal">
@@ -20,7 +20,7 @@
 
 <div class="form-actions">
   <%= link_to t('.back', :default => t("helpers.links.back")),
-              Users_path, :class => 'btn'  %>
+              Users_path, :class => 'btn btn-primary' %>
   <%= link_to t('.edit', :default => t("helpers.links.edit")),
               edit_User_path(@User), :class => 'btn' %>
   <%= link_to t('.destroy', :default => t("helpers.links.destroy")),

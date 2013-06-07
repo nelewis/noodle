@@ -60,3 +60,6 @@ Friend.create(:email =>"michelle@michelle.com",
                         :picture =>"/uploads/friend/picture/1/sublime_text.png",
                         :name =>"Michelle Beaton",
                         :address => "Friars Dell, 34 Woodside Road, Lower Woodside, LU1 4DQ")
+Friend.create(:email =>"robert@robert.com",
+                        :name =>"Robert Stutton",
+                        :address => "Auckland, New Zealand")

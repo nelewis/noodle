@@ -19,7 +19,7 @@
     padding: 10 px;
     margin-left: 20px;
 }
-body { padding-top: 100px; }
+body { padding-top: 100px; margin-left: 20px;}
 footer { margin-top: 100px; }
 table, td, th { vertical-align: middle !important; border: none !important; }
 th { border-bottom: 1px solid #DDD !important; }

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Noodle</title>
+  <title> digital Mum</title>
 <!--[if lt IE 9]>
 <script src="dist/html5shiv.js"></script>
 <![endif]-->
@@ -16,7 +16,7 @@
 		<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
 			<span class="icon-bar"></span>
 		</a>
-		<a class="brand" href="#">Noodle</a>
+		<a class="brand" href="#" margin-left='200'>  Noodle</a>
 		<div class="nav-collapse">
 			<ul class="nav">
 				<li><%= link_to "Family", "/friends" %></li>
@@ -24,11 +24,11 @@
 			</ul>
 			<p class="navbar-text">
 				<% if user_signed_in? %>
-  				Logged in as <strong><%= current_user.email %></strong>.
+  				  Signed in as <strong><%= current_user.email %></strong>.
   					<%= link_to 'Edit profile', edit_user_registration_path, :class => 'navbar-link' %> |
   					<%= link_to "Logout", destroy_user_session_path, method: :delete, 
   					:class => 'navbar-link' %>
-						<% else %>
+				<% else %>
   					<%= link_to "Sign up", new_user_registration_path, :class => 'navbar-link'  %> |
   					<%= link_to "Login", new_user_session_path, :class => 'navbar-link'  %>
 				<% end %>
@@ -43,19 +43,12 @@
 		    <%= value %>
 		  </div>
 		<% end %>
-		<nav>
-		  <% if user_signed_in? %>
-		    Signed in as <%= current_user.email %>
-		  <% else %>
-		    <%= link_to "Sign Up", new_user_registration_path %>  
-		  <% end %>
-		</nav>
 		<p><%= yield %></p>
 		</div>
 	</div>
 </div>
 <footer>
-    <div class="container">Noodle for Q3 UW Ruby on Rails certificate 2013</div>
+    <div class="container">Nicole Lewis for Q3 UW Ruby on Rails certificate 2013</div>
 </footer>
 </body>
 </html>

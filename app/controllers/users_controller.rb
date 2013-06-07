@@ -14,6 +14,7 @@ class UsersController < ApplicationController
   # GET /users/1.json
   def show
     @users = User.find(params[:id])
+    flash[:error] = "Customer not found" and return unless @user
 
     respond_to do |format|
       format.html # show.html.erb

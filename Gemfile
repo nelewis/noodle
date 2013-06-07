@@ -1,11 +1,14 @@
 source 'https://rubygems.org'
 
+ruby '1.9.3'
+
 gem 'rails', '3.2.11'
 gem 'devise', '2.1.0.rc'
 gem 'carrierwave'
 gem 'geocoder'
 gem 'gmaps4rails'
-gem 'sqlite3', '~> 1.3.7'
+#gem 'pg'
+
 
 group :development do
   gem 'rspec-rails'
@@ -14,6 +17,7 @@ group :development do
   gem 'binding_of_caller'
   gem 'meta_request'
   gem 'database_cleaner', '>=0.9.1'
+  gem 'sqlite3', '~> 1.3.7'
 end
 
 # Gems used only for assets and not required
@@ -30,7 +34,6 @@ end
 gem 'jquery-rails' 
 
 group :test do
-  #gem 'sqlite3', '~> 1.3.7'
   gem 'rspec-rails'
   gem 'capybara', '1.1.2' # this version works, keep it
   gem 'rb-fchange', '0.0.5'
@@ -39,12 +42,13 @@ group :test do
   gem 'spork','0.9.0'
   gem 'factory_girl', '2.6.4'
   gem 'email_spec', '1.2.1'
-  
+  gem 'sqlite3', '~> 1.3.7'
 end
 
-#group :production do
-#   gem 'pg'
-#end
+group :production do
+  #gem 'sqlite3', '~> 1.3.7'
+  gem 'pg'
+end
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
