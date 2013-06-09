@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>digitalMum</title>
+    <style type="text/css" media="screen">
+      body {
+        margin: 0;
+        margin-bottom: 25px;
+        padding: 0;
+        background-color: #f0f0f0;
+        "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color: #333;
+      }
+
+      h1 {
+        font-size: 28px;
+        color: #060562;
+        float: right;
+      }
+      h2 {
+        font-size: 20px;
+        color: #060562;
+        float: right;
+      }
+      a  {color: #03c}
+
+      a:hover {
+        background-color: #03c;
+        color: white;
+        text-decoration: none;
+        font-size: 28px;
+      }
+
+
+      #page {
+        background-color: #f0f0f0;
+        width: 750px;
+        margin: 0;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      #content {
+        float: left;
+        background-color: white;
+        border: 3px solid #aaa;
+        border-top: none;
+        padding: 25px;
+        width: 500px;
+      }
+
+      #sidebar {
+        float: right;
+        width: 175px;
+      }
+
+      #footer {
+        clear: both;
+        float: center;
+      }
+
+      #header {
+        padding-left: 75px;
+        padding-right: 30px;
+        background-image: url("assets/mum_small.jpg");
+        background-repeat: no-repeat;
+        background-position: top left;
+        height: 200px;
+        width: 200px;
+      }
+      #header h1, #header h2 {
+        float: right;
+        margin: 0;}
+
+      #header h2 {
+        color: #888;
+        font-weight: normal;
+        font-size: 18px;
+      }
+
+      #sidebar ul {
+        margin-left: 0;
+        padding-left: 0;
+      }
+      #sidebar ul h3 {
+        margin-top: 25px;
+        font-size: 24px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #ccc;
+        font-size: 20px;
+        color: #060562;
+      }
+
+      #sidebar li {
+        list-style-type: none;
+      }
+      #sidebar ul.links li {
+        margin-bottom: 5px;
+      }
+
+      #mum-things {
+        border-top: 1px solid #ccc;
+        margin-top: 25px;
+        padding-top: 15px;
+      }
+      #mum-things h1 {
+        margin: 0;
+        font-size: 20px;
+      }
+      #mum-things h2 {
+        margin: 0;
+        font-size: 18px;
+        font-weight: normal;
+        color: #333;
+        margin-bottom: 25px;
+      }
+      #mum-things p {
+        color: #555;
+        font-size: 13px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="page">
+
+      <div id="sidebar">
+        <div id="header">
+          <h1>Hello me beaut!</h1>
+        </div>
+        <ul id="sidebar-items">
+          <li>
+            <h3>What shall we do?</h3>
+            <ul class="links">
+                <li><a href="/friends/" onclick="folks(); return false">See</a> where we are</li>
+                <li>Soon enough we will have to login in first, but not just yet my love
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div id="content">
+          <h2>I wondered where you were</h2>
+        <div id="mum-things">
+          <h2><p>It&#39;s spring</p>
+            THE Year&#39;s at the spring;<br>
+            &nbsp; The day&#39;s at the morn;<br>
+            Morning&#39;s at seven;<br>
+            &nbsp;The hillside&#39;s on the thorn;<br>
+            God&#39;s in his heaven - <br>
+            &nbsp;All&#39;s right with the world!
+            <p>Robert Browning</p>
+          </h2>
+        </div>
+    </div>
+     <div id="footer">Nikki&#39;s final project for the UW Ruby on Rails certificate</div>
+  </body>
+</html>

@@ -16,11 +16,11 @@
 		<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
 			<span class="icon-bar"></span>
 		</a>
-		<a class="brand" href="#" margin-left='200'>  Noodle</a>
+		<a class="brand" href="/index">Noodle</a>
 		<div class="nav-collapse">
 			<ul class="nav">
-				<li><%= link_to "Family", "/friends" %></li>
-				<li><%= link_to "Users", "/users" %></li>
+				<li><%= link_to "Folks", "/friends" %></li>
+				<li><%= link_to "Admins", "/users" %></li>
 			</ul>
 			<p class="navbar-text">
 				<% if user_signed_in? %>
@@ -46,9 +46,8 @@
 		<p><%= yield %></p>
 		</div>
 	</div>
+    <div id="footer" align:center>&nbsp; Noodle&#39;s final project for the UW Ruby on Rails certificate
+    </div>
 </div>
-<footer>
-    <div class="container">Nicole Lewis for Q3 UW Ruby on Rails certificate 2013</div>
-</footer>
 </body>
 </html>
