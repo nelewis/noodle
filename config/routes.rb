@@ -9,7 +9,7 @@ Noodle::Application.routes.draw do
   #
   resources :friends
   resources :users 
-  #root :to => redirect('/friends')
+  root :to => redirect('/friends')
 
 
   # The priority is based upon order of creation:
