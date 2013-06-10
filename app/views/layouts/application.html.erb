@@ -16,9 +16,10 @@
 		<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
 			<span class="icon-bar"></span>
 		</a>
-		<a class="brand" href="/index">Noodle</a>
+		<a class="brand" href="#">digitalMum</a>
 		<div class="nav-collapse">
 			<ul class="nav">
+				<li><%= link_to "Mum", "/base" %></a>
 				<li><%= link_to "Folks", "/friends" %></li>
 				<li><%= link_to "Admins", "/users" %></li>
 			</ul>
@@ -46,8 +47,6 @@
 		<p><%= yield %></p>
 		</div>
 	</div>
-    <div id="footer" align:center>&nbsp; Noodle&#39;s final project for the UW Ruby on Rails certificate
-    </div>
 </div>
 </body>
 </html>
