@@ -1,6 +1,8 @@
 ---
 etheringtons.jpg: etheringtons-57dfa45fd88533d0a4555f74d5177ff6.jpg
 etheringtons/index.jpg: etheringtons-57dfa45fd88533d0a4555f74d5177ff6.jpg
+fallback/default.jpg: fallback/default-821e2f6181cd7ba92d7ccfe82d4aee8d.jpg
+fallback/default/index.jpg: fallback/default-821e2f6181cd7ba92d7ccfe82d4aee8d.jpg
 mum.jpg: mum-03d4635bedb31e64ce92b2e5c1be1375.jpg
 mum/index.jpg: mum-03d4635bedb31e64ce92b2e5c1be1375.jpg
 mum_border.jpg: mum_border-7054e080314108725880f7f525767378.jpg
