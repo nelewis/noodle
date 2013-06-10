@@ -6,28 +6,29 @@ Noodle::Application.routes.draw do
   # Resource routing allows you to quickly declare all of the common routes for a given resourceful controller. 
   # Instead of declaring separate routes for your index, show, new, edit, create, update and destroy actions, 
   # a resourceful route declares them in a single line of code.
-  #
+  # The priority is based upon order of creation:
+  # first created -> highest priority.
+  
   resources :friends
   resources :users 
   resources :base
 
+
+  # You can have the root of your site routed with "root"
+  # just remember to delete public/index.html.
+  # root :to => 'welcome#index'
+
   root :to => 'base#index'
-  #root :to => redirect('/friends')
-
-
-  # The priority is based upon order of creation:
-  # first created -> highest priority.
 
   # Sample of regular route:
   #   match 'products/:id' => 'catalog#view'
   # Keep in mind you can assign values other than :controller and :action
 
+  match 'friends/' => 'friends#index'
+
   # Sample of named route:
   #   match 'products/:id/purchase' => 'catalog#purchase', :as => :purchase
   # This route can be invoked with purchase_url(:id => product.id)
-
-  # Sample resource route (maps HTTP verbs to controller actions automatically):
-  #   resources :products
 
   # Sample resource route with options:
   #   resources :products do
@@ -61,10 +62,6 @@ Noodle::Application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
-
-  # You can have the root of your site routed with "root"
-  # just remember to delete public/index.html.
-  # root :to => 'welcome#index'
 
   # See how all your routes lay out with "rake routes"
 
