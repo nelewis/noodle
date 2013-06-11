@@ -5,7 +5,7 @@ class MonthsController < ApplicationController
 
 	def show
     @month = Month.find(params[:id])
-    @friends = Friend.where("date(dob) like '%-0?-%' or date(dob) like '%-?-%'", @month.id, @month.id)
+    @friends = Friend.by_month(@month)
 
     respond_to do |format|
       format.html # show.html.erb
