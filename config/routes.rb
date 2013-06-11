@@ -1,5 +1,4 @@
 Noodle::Application.routes.draw do
-  devise_for :users
   devise_for :installs
   #
   # In Rails, a resourceful route provides a mapping between HTTP verbs and URLs to controller actions.
@@ -10,8 +9,8 @@ Noodle::Application.routes.draw do
   # first created -> highest priority.
   
   resources :friends
-  resources :users 
   resources :base
+  resources :months
 
 
   # You can have the root of your site routed with "root"

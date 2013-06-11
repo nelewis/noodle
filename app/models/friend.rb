@@ -4,4 +4,5 @@ class Friend < ActiveRecord::Base
   after_validation :geocode
   acts_as_gmappable :process_geocoding => false
   attr_accessible :address, :dob, :name, :picture, :created_at, :email, :latitude, :longitude
+
 end
