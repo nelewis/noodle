@@ -2,7 +2,12 @@ class FriendsController < ApplicationController
   # GET /friends
   # GET /friends.json
   def index
-    @friends = Friend.all
+    @friends = Friend.all(:order => "name")
+
+    Rack::MiniProfiler.step("fetch friends") do
+      @friends
+    end
+
     @pins = @friends.to_gmaps4rails
 
     respond_to do |format|

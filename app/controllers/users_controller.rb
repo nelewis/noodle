@@ -5,6 +5,10 @@ class UsersController < ApplicationController
     @users = User.all
     @pins = @users.to_gmaps4rails
     
+    Rack::MiniProfiler.step("fetch users") do
+      @users
+    end
+
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @users }
@@ -13,8 +17,8 @@ class UsersController < ApplicationController
   # GET /users/1
   # GET /users/1.json
   def show
-    @users = User.find(params[:id])
-    flash[:error] = "Customer not found" and return unless @user
+    @users = User.find(params[:email])
+    flash[:error] = "Admin not found" and return unless @user
 
     respond_to do |format|
       format.html # show.html.erb
@@ -35,13 +39,13 @@ class UsersController < ApplicationController
 
   # GET /users/1/edit
   def edit
-    @user = User.find(current_user.id)
+    @user = User.find(current_user.email)
   end
 
   # DELETE /users/1
   # DELETE /users/1.json
   def destroy
-    @user = User.find(params[:id])
+    @user = User.find(params[:email])
     @user.destroy
 
     respond_to do |format|

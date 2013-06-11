@@ -24,7 +24,7 @@ Noodle::Application.routes.draw do
   #   match 'products/:id' => 'catalog#view'
   # Keep in mind you can assign values other than :controller and :action
 
-  match 'friends/' => 'friends#index'
+  #match 'friends/' => 'friends#index'
 
   # Sample of named route:
   #   match 'products/:id/purchase' => 'catalog#purchase', :as => :purchase

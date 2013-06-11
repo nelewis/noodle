@@ -11,7 +11,7 @@
   <dt><strong><%= model_class.human_attribute_name(:address) %>:</strong></dt>
   <dd><%= @friend.address %></dd>
   <dt><strong><%= model_class.human_attribute_name(:picture) %>:</strong></dt>
-  <dd><%= image_tag(@friend.picture_url, :width => 60) if @friend.picture.present? %></dd>
+  <dd><%= image_tag(@friend.picture_url, :width => 60) %></dd>
   <dt><strong><%= model_class.human_attribute_name(:latitude) %>:</strong></dt>
   <dd><%= @friend.latitude %></dd>
   <dt><strong><%= model_class.human_attribute_name(:longitude) %>:</strong></dt>

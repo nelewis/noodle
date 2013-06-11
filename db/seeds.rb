@@ -8,7 +8,7 @@
 
 admin_user = User.create(:email => "admin@admin.com",
                         :encrypted_password => "password",
-                        :picture =>"/uploads/friend/picture/1/sublime_text.png",
+                        :picture =>"/uploads/friend/picture/1/default.jpg",
                         :name => "Nicole admin user",
                         :address => "1117 27th Ave, Seattle WA 98122")
 
@@ -17,7 +17,7 @@ admin_user.confirm!
 
 regular_user1 = User.create(:email =>"tishy@tishy.com",
 						:encrypted_password => "password",
-                        :picture =>"/uploads/friend/picture/1/sublime_text.png",
+                        :picture =>"/uploads/friend/picture/1/default.jpg",
                         :name =>"Tishy not admin user",
                         :address => "19653 117A Ave, Pitt Meadows, BC V3Y 1R8")
 
@@ -25,14 +25,14 @@ regular_user1.confirm!
 
 regular_user2 = User.create(:email =>"ade@ade.com",
                         :encrypted_password => "password",
-                        :picture =>"/uploads/friend/picture/1/sublime_text.png",
+                        :picture =>"/uploads/friend/picture/1/default.jpg",
                         :name =>"Ade not admin user",
                         :address => "121 Roberts Ave, Holbrook MA 02343")
 
 regular_user2.confirm! 
 
 Friend.create(:email =>"pops@pops.com",
-                        :picture => "/uploads/friend/picture/1/sublime_text.png",
+                        :picture => "/uploads/friend/picture/1/pops.jpg",
                         :name => "Gerald Arthur Lewis",
                         :address => "26 Byron Road, Aylesbury, Bucks, HP21 7LU")
 
@@ -41,23 +41,19 @@ Friend.create(:email =>"mum@mumsy.com",
                         :address => "26 Byron Road, Aylesbury, Bucks, HP21 7LU")
 
 Friend.create(:email =>"dod@dod.com.com",
-                        :picture => "/uploads/friend/picture/1/sublime_text.png",
                         :name => "Gerard Lewis",
-                        :address => "32 Chequers Close, orby, Northants NN18 8QD")
+                        :address => "32 Chequers Close, Corby, Northants NN18 8QD")
 Friend.create(:email => "brid@brid.com",
-                        :picture =>"/uploads/friend/picture/1/sublime_text.png",
                         :name => "Brid Nowlan",
                         :address => "8525 4th Ave, Seattle WA 98122")
 Friend.create(:email => "nicole@nicole.com",
-                        :picture =>"/uploads/friend/picture/1/sublime_text.png",
+                        :picture =>"/uploads/friend/picture/1/nikki.jpg",
                         :name => "Nicole Emma Lewis",
                         :address => "1117 27th Ave, Seattle WA 98122")
 Friend.create(:email =>"tishy@tishy.com",
-                        :picture =>"/uploads/friend/picture/1/sublime_text.png",
                         :name =>"Tishy not admin user",
                         :address => "19653 117A Ave, Pitt Meadows, BC V3Y 1R8")
 Friend.create(:email =>"michelle@michelle.com",
-                        :picture =>"/uploads/friend/picture/1/sublime_text.png",
                         :name =>"Michelle Beaton",
                         :address => "Friars Dell, 34 Woodside Road, Lower Woodside, LU1 4DQ")
 Friend.create(:email =>"robert@robert.com",
