@@ -1,5 +1,4 @@
 Noodle::Application.routes.draw do
-  devise_for :installs
   #
   # In Rails, a resourceful route provides a mapping between HTTP verbs and URLs to controller actions.
   # Resource routing allows you to quickly declare all of the common routes for a given resourceful controller. 
