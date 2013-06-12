@@ -1,5 +1,7 @@
 <%- model_class = Friend -%>
 <div class="page-header">
-  <h3><%=t '.title', :default => [:'helpers.titles.new', 'New %{model}'], :model => model_class.model_name.human %></h3>
+	<h4>Please add someone <%=t, :default => [:'helpers.titles.new', 'New %{model}'], :model => model_class.model_name.human %>  
+    </h4>
 </div>
+
 <%= render :partial => 'form' %>

@@ -1,6 +1,10 @@
 <%- model_class = Friend -%>
 <div class="page-header">
-  <h3 small><%=t '.title', :default => "We are here" %></h3>
+  <dl class="dl-horizontal">
+      <dt><strong>We are everywhere...  
+      </strong></dt>
+      <dd></dd>
+  </dl>
 </div>
 
 <table class="table table-striped">
@@ -10,13 +14,13 @@
 
   <thead>
     <tr>
-      <th><%= model_class.human_attribute_name(:id) %></th>
-      <th><%= model_class.human_attribute_name(:name) %></th>
-      <th><%= model_class.human_attribute_name(:email) %></th>
-      <th><%= model_class.human_attribute_name(:dob) %></th>
-      <th><%= model_class.human_attribute_name(:address) %></th>
-      <th><%= model_class.human_attribute_name(:picture) %></th>
-      <th><%=t '.actions', :default => t("helpers.actions") %></th>
+      <th>Key</th>
+      <th>Full Name</th>
+      <th>Email</th>
+      <th>Date of birth</th>
+      <th>Address</th>
+      <th>Picture</th>
+      <th>Actions</th>
     </tr>
   </thead>
   <tbody>
@@ -35,7 +39,7 @@
           <%= link_to t('.destroy', :default => t("helpers.links.destroy")),
                       friend_path(friend),
                       :method => :delete,
-                      :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) },
+                      :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'You clicked on delete. Are you sure you want to delete this person?')) },
                       :class => 'btn btn-mini btn-danger' %>
         </td>
       </tr>

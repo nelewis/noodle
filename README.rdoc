@@ -1,12 +1,22 @@
 = noodle
 
-This is will become my family's anti-social social media site (so my Pops will use it).  It will also have a "book of days" built in so we will be able to remember when family birthdays are.  It is also my class project for quarter 3 of the UW 2012/13 Ruby on Rails Certificate. 
+This is in the process of becoming my family's anti-social social media site (so my Pops will use it).  It will also have a "book of days" built in so we will be able to remember when family birthdays are, because Mum just to remember all for us.  It is also my class project for quarter 3 of the UW 2012/13 Ruby on Rails Certificate. 
 
 Features:
 Complete set of XP style User Stories are in /doc/XP_user_stories.txt
 
-Running tested features:
-* None yet
+Running features:
+* Mum things page
+* Map of where we are
+* List of folks
+* Abilility to add new folks
+* Ability to edit folks text or image data
+* Ability to delete folks with a hefty warning
+* Days to remember, picked by month, which shows who has a birthday that month
+* Mum's last poem
+
+Running test features:
+* None yet, working on it
 
 == Author
 

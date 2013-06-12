@@ -1,16 +1,12 @@
 <%- model_class = Month -%>
 <div class="page-header">
-  <dl class="dl-horizontal">
-      <dt><strong>Please pick a month...  
-      </strong></dt>
-      <dd></dd>
-  </dl>
+  <h4>Please pick a month...</h4>
 </div>
 
   <table class="table table-striped">
   <thead>
     <tr>
-      <th><%= model_class.human_attribute_name(:id) %></th>
+      <th>Month</th>
       <th><%= model_class.human_attribute_name(:name) %></th>
     </tr>
   </thead>
