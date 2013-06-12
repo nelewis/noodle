@@ -8,6 +8,7 @@ gem 'carrierwave'
 gem 'geocoder'
 gem 'gmaps4rails'
 gem 'rack-mini-profiler'
+gem 'newrelic-rpm'
 
 
 group :development do
