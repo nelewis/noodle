@@ -8,8 +8,8 @@ gem 'carrierwave'
 gem 'geocoder'
 gem 'gmaps4rails'
 gem 'rack-mini-profiler'
-gem 'newrelic-rpm'
-
+gem 'newrelic_rpm'
+gem 'thin'
 
 group :development do
   gem 'rspec-rails'
