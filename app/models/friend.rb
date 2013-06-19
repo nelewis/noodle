@@ -1,10 +1,10 @@
 class Friend < ActiveRecord::Base
+  attr_accessible :address, :dob, :name, :picture, :created_at, :email, :latitude, :longitude
   mount_uploader :picture, PictureUploader
   geocoded_by :address
   after_validation :geocode
   acts_as_gmappable :process_geocoding => false
-  attr_accessible :address, :dob, :name, :picture, :created_at, :email, :latitude, :longitude
-  
+    
   def self.by_month(month)
     case ActiveRecord::Base.connection.adapter_name  
       when 'SQLite'
