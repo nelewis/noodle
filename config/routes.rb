@@ -1,4 +1,5 @@
 Noodle::Application.routes.draw do
+
   #
   # In Rails, a resourceful route provides a mapping between HTTP verbs and URLs to controller actions.
   # Resource routing allows you to quickly declare all of the common routes for a given resourceful controller. 
@@ -6,7 +7,7 @@ Noodle::Application.routes.draw do
   # a resourceful route declares them in a single line of code.
   # The priority is based upon order of creation:
   # first created -> highest priority.
-  
+  resources :galleries
   resources :friends
   resources :base
   resources :months

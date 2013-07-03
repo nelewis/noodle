@@ -7,11 +7,11 @@
  *
  * You're free to add application-wide styles to this file and they'll appear at the top of the
  * compiled file, but it's generally better to create a new file per style scope.
+ * BTW *= require_tree .   adds everything inside /stylesheets :)
  *
  *= require_self
  *= require bootstrap
  *= require gmaps4rails
- *= require_tree .
  */
 #logo {
     font-size: 20px;
