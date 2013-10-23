@@ -14,3 +14,7 @@
 /log/*.log
 /tmp
 /test/issues
+
+# Ignore public image files
+/public
+
